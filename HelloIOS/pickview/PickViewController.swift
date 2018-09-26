@@ -17,8 +17,6 @@ class PickViewController: UIViewController,UIPickerViewDelegate,UIPickerViewData
     var pickerData:NSDictionary!
     var pickerProvincesData:NSArray!
     var pickerCityData:NSArray!
-    var curProvince:String!
-    var curCity:String!
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
@@ -38,12 +36,20 @@ class PickViewController: UIViewController,UIPickerViewDelegate,UIPickerViewData
         //默认取出第一个省的所有市
         let selectedProvince = self.pickerProvincesData[0] as! NSString
         self.pickerCityData = self.pickerData[selectedProvince] as! NSArray
-        curProvince = selectedProvince as String?
-        curCity = self.pickerCityData[0] as! String
+        updateLabel()
     }
     
     @IBAction func onGetCityBtnClick(_ sender: Any) {
-        let str:String = "当前省市："+curProvince+","+curCity
+        updateLabel()
+    }
+    
+    private func updateLabel(){
+        //获取当前选中行的index
+        let selectedProvinceIndex = self.pickView.selectedRow(inComponent: 0)
+        let curProvince = self.pickerProvincesData[selectedProvinceIndex] as? String
+        let selectedCityIndex = self.pickView.selectedRow(inComponent: 1)
+        let curCity = self.pickerCityData[selectedCityIndex] as? String
+        let str:String = "当前省市："+curProvince!+","+curCity!
         dataLabel.text = str
     }
     
@@ -74,14 +80,11 @@ class PickViewController: UIViewController,UIPickerViewDelegate,UIPickerViewData
         //省转轮转动
         if(component == 0){
             let selectedProvince = self.pickerProvincesData[row] as? String
-            //更新缓存
-            curProvince = selectedProvince
             self.pickerCityData = self.pickerData[selectedProvince] as? NSArray
             //重新加载市转轮
             self.pickView.reloadComponent(1)
-        }else if(component == 1){
-            curCity = self.pickerCityData[row] as? String
         }
+        updateLabel()
     }
     
     //UIPickerViewDelegate委托协议：pickerview转轮数量
