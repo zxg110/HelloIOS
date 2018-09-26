@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOm-zD-JoL">
+                                <rect key="frame" x="26" y="119" width="323" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tMP-IO-Wyp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUE-x6-Znf">
+                                <rect key="frame" x="26" y="245" width="46" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Aug-B9-qtX"/>
+                                </constraints>
+                                <state key="normal" title="去登录"/>
+                                <connections>
+                                    <action selector="onGoLoginBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKf-NR-jKa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhS-xr-tgN">
+                                <rect key="frame" x="26" y="71" width="35" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fmi-BP-09Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ub5-de-zvl">
+                                <rect key="frame" x="26" y="177" width="323" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-lJ-MPn">
+                                <rect key="frame" x="80" y="240" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="goListView"/>
+                                <connections>
+                                    <action selector="goList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08W-P6-c2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGB-i2-wBh">
+                                <rect key="frame" x="182" y="246" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="goPickerView"/>
+                                <connections>
+                                    <action selector="goPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9V-UQ-kJJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOm-zD-JoL" secondAttribute="trailing" constant="26" id="4QY-bu-6YI"/>
+                            <constraint firstItem="Ub5-de-zvl" firstAttribute="top" secondItem="rOm-zD-JoL" secondAttribute="bottom" constant="18" id="B7d-u5-rga"/>
+                            <constraint firstItem="rOm-zD-JoL" firstAttribute="leading" secondItem="BhS-xr-tgN" secondAttribute="leading" id="KJ3-F9-09l"/>
+                            <constraint firstItem="Ub5-de-zvl" firstAttribute="leading" secondItem="zUE-x6-Znf" secondAttribute="leading" id="OZO-ws-ggu"/>
+                            <constraint firstItem="zUE-x6-Znf" firstAttribute="top" secondItem="Ub5-de-zvl" secondAttribute="bottom" constant="28" id="TTH-8J-zzE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BhS-xr-tgN" secondAttribute="trailing" constant="20" symbolic="YES" id="XAs-Qm-Sy7"/>
+                            <constraint firstItem="zUE-x6-Znf" firstAttribute="leading" secondItem="Ub5-de-zvl" secondAttribute="leading" id="XXA-BR-Oub"/>
+                            <constraint firstItem="rOm-zD-JoL" firstAttribute="top" secondItem="BhS-xr-tgN" secondAttribute="bottom" constant="8" symbolic="YES" id="b1f-Lp-NqI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zUE-x6-Znf" secondAttribute="trailing" constant="20" symbolic="YES" id="d1m-aJ-Lc9"/>
+                            <constraint firstItem="Ub5-de-zvl" firstAttribute="height" secondItem="rOm-zD-JoL" secondAttribute="height" id="fGt-tk-1Nz"/>
+                            <constraint firstItem="Ub5-de-zvl" firstAttribute="trailing" secondItem="rOm-zD-JoL" secondAttribute="trailing" id="iKJ-V9-PFM"/>
+                            <constraint firstItem="BhS-xr-tgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="k2Z-Pl-dqG"/>
+                            <constraint firstItem="BhS-xr-tgN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="ohx-O3-HYC"/>
+                            <constraint firstItem="Ub5-de-zvl" firstAttribute="leading" secondItem="rOm-zD-JoL" secondAttribute="leading" id="os7-MD-QkH"/>
+                            <constraint firstItem="zUE-x6-Znf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="qhA-AQ-6TN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mimaLab" destination="Ub5-de-zvl" id="qD9-qw-Pzl"/>
+                        <outlet property="nameLab" destination="rOm-zD-JoL" id="59w-0n-6Q1"/>
+                        <outlet property="toListBtn" destination="HIV-lJ-MPn" id="Vz1-Bn-ogj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
