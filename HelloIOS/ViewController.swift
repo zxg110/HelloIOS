@@ -70,9 +70,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goList(_ sender: Any) {
-//        let TableViewCont = TableViewController()
-//        self.present(loginViewController,animated: true,completion: nil)
-//    
+        print("into goList")
+        let newsListViewCont = NewsViewController()
+        self.present(newsListViewCont,animated: true,completion: nil)
+    
     }
     
     //代码添加View

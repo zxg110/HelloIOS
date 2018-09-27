@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E33C4BF72154900E00DE4746 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C4BF52154900E00DE4746 /* CustomCell.swift */; };
-		E33C4BF82154900E00DE4746 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C4BF62154900E00DE4746 /* CustomCell.xib */; };
+		E3399373215C7B5F008CE976 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3399372215C7B5F008CE976 /* News.swift */; };
 		E33F1AD3214FC8C800C15324 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F1AD1214FC8C800C15324 /* LoginViewController.swift */; };
 		E33F1AD4214FC8C800C15324 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33F1AD2214FC8C800C15324 /* LoginViewController.xib */; };
-		E33F1AEE2153A1E300C15324 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33F1AEC2153A1E300C15324 /* TableViewController.xib */; };
-		E33F1AEF21548D1500C15324 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F1AEB2153A1E300C15324 /* TableViewController.swift */; };
+		E351AB48215CE7DD00577502 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E351AB47215CE7DD00577502 /* NewsViewController.xib */; };
 		E35E4F482159C9C200954B8B /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E4F462159C9C200954B8B /* PickViewController.swift */; };
 		E35E4F492159C9C200954B8B /* PickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35E4F472159C9C200954B8B /* PickViewController.xib */; };
 		E35E4F4B2159CECA00954B8B /* city_plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35E4F4A2159CECA00954B8B /* city_plist.plist */; };
@@ -23,6 +21,10 @@
 		E3A3C33B2148A6270051E701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A3C3392148A6270051E701 /* LaunchScreen.storyboard */; };
 		E3A3C3462148A6270051E701 /* HelloIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3452148A6270051E701 /* HelloIOSTests.swift */; };
 		E3A3C3512148A6270051E701 /* HelloIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */; };
+		E3F10AC1215B8B470090CD43 /* news_plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3F10AC0215B8B470090CD43 /* news_plist.plist */; };
+		E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10AC2215B9CF70090CD43 /* NewsViewCell.swift */; };
+		E3F10AC5215B9CF70090CD43 /* NewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F10AC3215B9CF70090CD43 /* NewsViewCell.xib */; };
+		E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10AC6215B9EEC0090CD43 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E33C4BF52154900E00DE4746 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		E33C4BF62154900E00DE4746 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		E3399372215C7B5F008CE976 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E33F1AD1214FC8C800C15324 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E33F1AD2214FC8C800C15324 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		E33F1AEB2153A1E300C15324 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		E33F1AEC2153A1E300C15324 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		E351AB47215CE7DD00577502 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		E35E4F462159C9C200954B8B /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		E35E4F472159C9C200954B8B /* PickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickViewController.xib; sourceTree = "<group>"; };
 		E35E4F4A2159CECA00954B8B /* city_plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = city_plist.plist; sourceTree = "<group>"; };
@@ -65,6 +65,10 @@
 		E3A3C34C2148A6270051E701 /* HelloIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloIOSUITests.swift; sourceTree = "<group>"; };
 		E3A3C3522148A6270051E701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F10AC0215B8B470090CD43 /* news_plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = news_plist.plist; sourceTree = "<group>"; };
+		E3F10AC2215B9CF70090CD43 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
+		E3F10AC3215B9CF70090CD43 /* NewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewCell.xib; sourceTree = "<group>"; };
+		E3F10AC6215B9EEC0090CD43 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E339936E215C7A14008CE976 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E3399372215C7B5F008CE976 /* News.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		E33F1AE121539F4100C15324 /* ListViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E33F1AEB2153A1E300C15324 /* TableViewController.swift */,
-				E33F1AEC2153A1E300C15324 /* TableViewController.xib */,
-				E33C4BF52154900E00DE4746 /* CustomCell.swift */,
-				E33C4BF62154900E00DE4746 /* CustomCell.xib */,
+				E339936E215C7A14008CE976 /* model */,
+				E3F10AC2215B9CF70090CD43 /* NewsViewCell.swift */,
+				E3F10AC3215B9CF70090CD43 /* NewsViewCell.xib */,
+				E3F10AC6215B9EEC0090CD43 /* NewsViewController.swift */,
+				E351AB47215CE7DD00577502 /* NewsViewController.xib */,
 			);
 			path = ListViewDemo;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 		E3A3C3242148A6260051E701 = {
 			isa = PBXGroup;
 			children = (
+				E3F10AC0215B8B470090CD43 /* news_plist.plist */,
 				E35E4F4A2159CECA00954B8B /* city_plist.plist */,
 				E3A3C32F2148A6260051E701 /* HelloIOS */,
 				E3A3C3442148A6270051E701 /* HelloIOSTests */,
@@ -281,14 +295,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F10AC5215B9CF70090CD43 /* NewsViewCell.xib in Resources */,
 				E33F1AD4214FC8C800C15324 /* LoginViewController.xib in Resources */,
 				E35E4F492159C9C200954B8B /* PickViewController.xib in Resources */,
-				E33C4BF82154900E00DE4746 /* CustomCell.xib in Resources */,
 				E3A3C33B2148A6270051E701 /* LaunchScreen.storyboard in Resources */,
-				E33F1AEE2153A1E300C15324 /* TableViewController.xib in Resources */,
 				E3A3C3382148A6270051E701 /* Assets.xcassets in Resources */,
 				E35E4F4B2159CECA00954B8B /* city_plist.plist in Resources */,
+				E3F10AC1215B8B470090CD43 /* news_plist.plist in Resources */,
 				E3A3C3362148A6260051E701 /* Main.storyboard in Resources */,
+				E351AB48215CE7DD00577502 /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,9 +330,10 @@
 			files = (
 				E33F1AD3214FC8C800C15324 /* LoginViewController.swift in Sources */,
 				E3A3C3332148A6260051E701 /* ViewController.swift in Sources */,
-				E33F1AEF21548D1500C15324 /* TableViewController.swift in Sources */,
+				E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */,
+				E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */,
+				E3399373215C7B5F008CE976 /* News.swift in Sources */,
 				E35E4F482159C9C200954B8B /* PickViewController.swift in Sources */,
-				E33C4BF72154900E00DE4746 /* CustomCell.swift in Sources */,
 				E3A3C3312148A6260051E701 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

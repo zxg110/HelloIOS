@@ -1,21 +1,22 @@
 //
-//  CustomCell.swift
+//  NewsViewCell.swift
 //  HelloIOS
 //
-//  Created by zxg on 2018/9/21.
+//  Created by zxg on 2018/9/26.
 //  Copyright © 2018年 zxg. All rights reserved.
 //
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+class NewsViewCell: UITableViewCell {
 
+    @IBOutlet weak var tvNewsTitle: UILabel!
+    @IBOutlet weak var tvNewsDesc: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    @IBOutlet weak var tvTitle: UIView!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

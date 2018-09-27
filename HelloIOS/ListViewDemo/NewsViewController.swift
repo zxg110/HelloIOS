@@ -1,22 +1,23 @@
 //
-//  TableViewController.swift
+//  NewsViewController.swift
 //  HelloIOS
 //
-//  Created by zxg on 2018/9/20.
+//  Created by zxg on 2018/9/26.
 //  Copyright © 2018年 zxg. All rights reserved.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class NewsViewController: UITableViewController {
     
-
-    var data = ["space","使用UITableView","使用UITableViewDelegate","1234567","abcdef","##$%^^&&","910455361@qq.com",
-                "151250070","xxxx@qq.com"]
-        
+    let newsItem = [News(title: "吴秀波出轨", desc: "吴秀波圈养小妾"),News(title: "中美贸易升级", desc: "美提升2000亿关税"),News(title: "海底捞上市", desc: "创始人张勇暴富"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临")]
+    let cellIdentifier = "NewsCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let nib = UINib.init(nibName: "NewsViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
+        //tableView.register(NewsViewCell.self, forCellReuseIdentifier: cellIdentifier)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,26 +32,39 @@ class TableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    //UITableViewDataSource委托协议：返回小节的数量
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    //UITableViewDataSource委托协议：返回每个小节的item数量，section为小节Index
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        return newsItem.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        //该方法中不需要做new cell的操作，IOS缓存机制保证通过dequeueReusableCell可以获取到cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewsViewCell
+            let row = indexPath.row
+            let news:News = newsItem[row]
+            cell.tvNewsTitle?.text = news.title
+            cell.tvNewsDesc?.text = news.desc
+            return cell
+        
+//        if(cell == nil){
+//            cell = NewsViewCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
+//        }
+//        let row = indexPath.row
+//        let news:News = newsItem[row]
+//        cell.tvNewsTitle?.text = news.title
+//        cell.tvNewsDesc?.text = news.desc
+//        return cell
         // Configure the cell...
 
-        return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -96,11 +110,5 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? CustomCell
-//        let content = data[indexPath.row]
-//        cell?.tvTitle
-//    }
     
-   
 }
