@@ -20,28 +20,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEe-am-aDh">
-                        <rect key="frame" x="32" y="11" width="160" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="160" id="mmT-lJ-qkc"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEe-am-aDh">
+                        <rect key="frame" x="28" y="11" width="146" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-rA-2h9">
-                        <rect key="frame" x="32" y="38" width="226" height="18"/>
+                        <rect key="frame" x="28" y="37" width="239" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="afM-Zr-vQv"/>
+                            <constraint firstAttribute="width" constant="239" id="ghn-oM-827"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="cEe-am-aDh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="EhT-IA-e8e"/>
-                    <constraint firstItem="QLC-rA-2h9" firstAttribute="top" secondItem="cEe-am-aDh" secondAttribute="bottom" constant="5" id="UzY-yQ-ym6"/>
-                    <constraint firstItem="cEe-am-aDh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="ahF-es-hqg"/>
-                    <constraint firstItem="cEe-am-aDh" firstAttribute="leading" secondItem="QLC-rA-2h9" secondAttribute="leading" id="bJu-tS-eAN"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="QLC-rA-2h9" secondAttribute="trailing" constant="46" id="lbQ-65-Upq"/>
+                    <constraint firstItem="QLC-rA-2h9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="C04-n5-oAa"/>
+                    <constraint firstItem="QLC-rA-2h9" firstAttribute="leading" secondItem="cEe-am-aDh" secondAttribute="leading" id="Ejc-qG-Ppe"/>
+                    <constraint firstItem="QLC-rA-2h9" firstAttribute="top" secondItem="cEe-am-aDh" secondAttribute="bottom" constant="4" id="h8Y-5f-OqZ"/>
+                    <constraint firstItem="QLC-rA-2h9" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="tJB-fB-coe"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -49,7 +49,7 @@
                 <outlet property="tvNewsDesc" destination="QLC-rA-2h9" id="ieg-IC-cyy"/>
                 <outlet property="tvNewsTitle" destination="cEe-am-aDh" id="sLz-q4-iNC"/>
             </connections>
-            <point key="canvasLocation" x="26" y="63"/>
+            <point key="canvasLocation" x="41" y="-195"/>
         </tableViewCell>
     </objects>
 </document>

@@ -10,20 +10,24 @@ import UIKit
 
 class NewsViewController: UITableViewController {
     
-    let newsItem = [News(title: "吴秀波出轨", desc: "吴秀波圈养小妾"),News(title: "中美贸易升级", desc: "美提升2000亿关税"),News(title: "海底捞上市", desc: "创始人张勇暴富"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临")]
+    //模拟数据源
+    let newsItem = [News(title: "吴秀波出轨", desc: "吴秀波圈养小妾"),News(title: "中美贸易升级", desc: "美提升2000亿关税"),News(title: "海底捞上市", desc: "创始人张勇暴富"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临"),News(title: "全国喜迎十一长假", desc: "国庆黄金周即将来临")]
     let cellIdentifier = "NewsCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //将TableView背景横线去掉
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+        //两种register方式：
+        //通过UINib注册，适用于xib方式，本例中，cell采用的是xib方式而非纯代码。
         let nib = UINib.init(nibName: "NewsViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
+        
+        /*通过class注册，适用于纯代码方式，需要在cell文件中重写init(style: UITableViewCellStyle, reuseIdentifier: String?)
+          在其中初始化view
+        */
         //tableView.register(NewsViewCell.self, forCellReuseIdentifier: cellIdentifier)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,70 +49,29 @@ class NewsViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //该方法中不需要做new cell的操作，IOS缓存机制保证通过dequeueReusableCell可以获取到cell
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewsViewCell
-            let row = indexPath.row
-            let news:News = newsItem[row]
-            cell.tvNewsTitle?.text = news.title
-            cell.tvNewsDesc?.text = news.desc
-            return cell
-        
-//        if(cell == nil){
-//            cell = NewsViewCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
-//        }
-//        let row = indexPath.row
-//        let news:News = newsItem[row]
-//        cell.tvNewsTitle?.text = news.title
-//        cell.tvNewsDesc?.text = news.desc
-//        return cell
+
+        /*使用dequeueReusableCell(withIdentifier: cellIdentifier)方法获取cell不需要通过register注册，但是要判断cell是否为空，为空则new cell
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? NewsViewCell
+
+        if(cell == nil){
+            cell = NewsViewCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
+        } */
+
+        /*使用dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)获取cell，其实就使用了tableview的缓存机制，当取到cell为空时
+          系统会帮忙创建register的cell，所以就不需要我们手动判空并实例化cell。所以必须register
+        */
         // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? NewsViewCell
+        let row = indexPath.row
+        let news:News = newsItem[row]
+        cell?.tvNewsTitle?.text = news.title
+        cell?.tvNewsDesc?.text = news.desc
+        return cell!
+    
     }
- 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    //返回每个cell的高度
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
