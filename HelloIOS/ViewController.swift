@@ -58,7 +58,9 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
-    
+    /**
+     模态弹出
+     */
     @IBAction func goPickerView(_ sender: Any) {
         let pickerViewCont = PickViewController()
         self.present(pickerViewCont,animated:true,completion:nil)
@@ -73,7 +75,6 @@ class ViewController: UIViewController {
         print("into goList")
         let newsListViewCont = NewsViewController()
         self.present(newsListViewCont,animated: true,completion: nil)
-    
     }
     
     //代码添加View

@@ -8,16 +8,17 @@
 
 import UIKit
 
-class LoginViewController: UIViewController ,UITextViewDelegate,UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource{
+class LoginViewController: UIViewController ,UITextViewDelegate,UITextFieldDelegate{
     
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var btnUpload: UIButton!
     @IBOutlet weak var switchLeft: UISwitch!
     @IBOutlet weak var lbTip: UILabel!
-    @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var tvUserName: UITextField!
-    
-    @IBOutlet weak var labelTest:UILabel!
+
+    @IBAction func btnBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     var myTimer:Timer!
     override func viewDidLoad() {
@@ -74,6 +75,7 @@ class LoginViewController: UIViewController ,UITextViewDelegate,UITextFieldDeleg
         myTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block:{
             (myTimer) in self.download()
         })
+        self
     }
     
     func download(){
@@ -86,44 +88,6 @@ class LoginViewController: UIViewController ,UITextViewDelegate,UITextFieldDeleg
         }
     }
     
-    /*委托协议：为选择器中某一行提供数据
-     *args:titleForRow:行数id
-     *     forComponent:拨轮id 默认从0开始
-     */
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//
-//    }
-//
-    /* 委托协议：可以理解为Java中的callBack，当某行被选中时被调用
-     */
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//
-//    }
-    
-    //返回选择器中拨轮的数量，个人理解为适配器
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
-    }
-    //返回选择器中某个拨轮的行数
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        switch component {
-        case 0:
-            return 10;
-        case 1:
-            return 20;
-        default:
-            return 1;
-        }
-    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

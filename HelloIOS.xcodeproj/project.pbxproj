@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E31A44492168999B00CB6834 /* ControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A44482168999B00CB6834 /* ControllerManager.swift */; };
 		E3399373215C7B5F008CE976 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3399372215C7B5F008CE976 /* News.swift */; };
 		E33F1AD3214FC8C800C15324 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F1AD1214FC8C800C15324 /* LoginViewController.swift */; };
 		E33F1AD4214FC8C800C15324 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33F1AD2214FC8C800C15324 /* LoginViewController.xib */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E31A44482168999B00CB6834 /* ControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManager.swift; sourceTree = "<group>"; };
 		E3399372215C7B5F008CE976 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E33F1AD1214FC8C800C15324 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E33F1AD2214FC8C800C15324 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E31A44472168997500CB6834 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				E31A44482168999B00CB6834 /* ControllerManager.swift */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
 		E339936E215C7A14008CE976 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		E3A3C32F2148A6260051E701 /* HelloIOS */ = {
 			isa = PBXGroup;
 			children = (
+				E31A44472168997500CB6834 /* framework */,
 				E3599DBA21577C6800558D92 /* pickview */,
 				E33F1AE121539F4100C15324 /* ListViewDemo */,
 				E3DDE41D214E6525006437CE /* Login */,
@@ -329,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33F1AD3214FC8C800C15324 /* LoginViewController.swift in Sources */,
+				E31A44492168999B00CB6834 /* ControllerManager.swift in Sources */,
 				E3A3C3332148A6260051E701 /* ViewController.swift in Sources */,
 				E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */,
 				E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */,

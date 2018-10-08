@@ -47,6 +47,48 @@
                         <action selector="onGetCityBtnClick:" destination="-1" eventType="touchUpInside" id="sVg-LY-Fvr"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FDA-4j-huc">
+                    <rect key="frame" x="172" y="576" width="38" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qGa-dS-GMG">
+                            <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PLA-Lb-sVa">
+                                    <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FRu-FW-V46">
+                                            <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-8b-1va">
+                                                    <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FXG-TV-gwx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuu-t5-bzd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="38" height="33"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <state key="normal" title="back"/>
+                                                                    <connections>
+                                                                        <action selector="onBackBtnClick:" destination="-1" eventType="touchUpInside" id="Ynm-WM-hsk"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="PLA-Lb-sVa" firstAttribute="centerX" secondItem="qGa-dS-GMG" secondAttribute="centerX" id="7gV-vA-lN4"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

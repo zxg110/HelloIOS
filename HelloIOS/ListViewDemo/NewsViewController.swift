@@ -19,6 +19,7 @@ class NewsViewController: UITableViewController {
         //将TableView背景横线去掉
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
+        self.navigationController?.setToolbarHidden(false, animated: true)
         //两种register方式：
         //通过UINib注册，适用于xib方式，本例中，cell采用的是xib方式而非纯代码。
         let nib = UINib.init(nibName: "NewsViewCell", bundle: nil)

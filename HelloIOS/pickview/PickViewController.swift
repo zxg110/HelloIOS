@@ -53,6 +53,9 @@ class PickViewController: UIViewController,UIPickerViewDelegate,UIPickerViewData
         dataLabel.text = str
     }
     
+    @IBAction func onBackBtnClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     //UIPickerViewDataSource委托协议：为选择器某个转轮的行提供显示数据
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if(component == 0){
