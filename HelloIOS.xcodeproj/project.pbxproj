@@ -22,10 +22,18 @@
 		E3A3C33B2148A6270051E701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A3C3392148A6270051E701 /* LaunchScreen.storyboard */; };
 		E3A3C3462148A6270051E701 /* HelloIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3452148A6270051E701 /* HelloIOSTests.swift */; };
 		E3A3C3512148A6270051E701 /* HelloIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */; };
+		E3E8934C217DDBAB003F5FB0 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8934B217DDBAB003F5FB0 /* HomeTabBarController.swift */; };
+		E3E89351217DE5A7003F5FB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8934F217DE5A7003F5FB0 /* HomeViewController.swift */; };
+		E3E89352217DE5A7003F5FB0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E89350217DE5A7003F5FB0 /* HomeViewController.xib */; };
+		E3E89355217DE5D0003F5FB0 /* WeitoutiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E89353217DE5D0003F5FB0 /* WeitoutiaoViewController.swift */; };
+		E3E89356217DE5D0003F5FB0 /* WeitoutiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E89354217DE5D0003F5FB0 /* WeitoutiaoViewController.xib */; };
+		E3E89359217DE619003F5FB0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E89357217DE619003F5FB0 /* UserInfoViewController.swift */; };
+		E3E8935A217DE619003F5FB0 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E89358217DE619003F5FB0 /* UserInfoViewController.xib */; };
 		E3F10AC1215B8B470090CD43 /* news_plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3F10AC0215B8B470090CD43 /* news_plist.plist */; };
 		E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10AC2215B9CF70090CD43 /* NewsViewCell.swift */; };
 		E3F10AC5215B9CF70090CD43 /* NewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F10AC3215B9CF70090CD43 /* NewsViewCell.xib */; };
 		E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10AC6215B9EEC0090CD43 /* NewsViewController.swift */; };
+		F7400E826D361C55DF82E0EA /* libPods-HelloIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDD8DAA8C4662619410C10B /* libPods-HelloIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C165A1FBF3BC1B53988B20F /* Pods-HelloIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9EDD8DAA8C4662619410C10B /* libPods-HelloIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA04C4D49F9121326FBDFBBC /* Pods-HelloIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS.release.xcconfig"; sourceTree = "<group>"; };
 		E31A44482168999B00CB6834 /* ControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerManager.swift; sourceTree = "<group>"; };
 		E3399372215C7B5F008CE976 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E33F1AD1214FC8C800C15324 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +78,13 @@
 		E3A3C34C2148A6270051E701 /* HelloIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloIOSUITests.swift; sourceTree = "<group>"; };
 		E3A3C3522148A6270051E701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E8934B217DDBAB003F5FB0 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		E3E8934F217DE5A7003F5FB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E3E89350217DE5A7003F5FB0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E3E89353217DE5D0003F5FB0 /* WeitoutiaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeitoutiaoViewController.swift; sourceTree = "<group>"; };
+		E3E89354217DE5D0003F5FB0 /* WeitoutiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeitoutiaoViewController.xib; sourceTree = "<group>"; };
+		E3E89357217DE619003F5FB0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		E3E89358217DE619003F5FB0 /* UserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		E3F10AC0215B8B470090CD43 /* news_plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = news_plist.plist; sourceTree = "<group>"; };
 		E3F10AC2215B9CF70090CD43 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
 		E3F10AC3215B9CF70090CD43 /* NewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewCell.xib; sourceTree = "<group>"; };
@@ -78,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7400E826D361C55DF82E0EA /* libPods-HelloIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EAD13300AC8710CA075C4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EDD8DAA8C4662619410C10B /* libPods-HelloIOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC744718E55190A6EB69A11B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C165A1FBF3BC1B53988B20F /* Pods-HelloIOS.debug.xcconfig */,
+				DA04C4D49F9121326FBDFBBC /* Pods-HelloIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E31A44472168997500CB6834 /* framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +180,8 @@
 				E3A3C3442148A6270051E701 /* HelloIOSTests */,
 				E3A3C34F2148A6270051E701 /* HelloIOSUITests */,
 				E3A3C32E2148A6260051E701 /* Products */,
+				AC744718E55190A6EB69A11B /* Pods */,
+				4EAD13300AC8710CA075C4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +198,9 @@
 		E3A3C32F2148A6260051E701 /* HelloIOS */ = {
 			isa = PBXGroup;
 			children = (
+				E3E8934E217DE571003F5FB0 /* UserInfo */,
+				E3E8934D217DE567003F5FB0 /* Weitoutiao */,
+				E3E89348217DDA3F003F5FB0 /* Home */,
 				E31A44472168997500CB6834 /* framework */,
 				E3599DBA21577C6800558D92 /* pickview */,
 				E33F1AE121539F4100C15324 /* ListViewDemo */,
@@ -201,6 +242,34 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		E3E89348217DDA3F003F5FB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3E8934B217DDBAB003F5FB0 /* HomeTabBarController.swift */,
+				E3E8934F217DE5A7003F5FB0 /* HomeViewController.swift */,
+				E3E89350217DE5A7003F5FB0 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E3E8934D217DE567003F5FB0 /* Weitoutiao */ = {
+			isa = PBXGroup;
+			children = (
+				E3E89353217DE5D0003F5FB0 /* WeitoutiaoViewController.swift */,
+				E3E89354217DE5D0003F5FB0 /* WeitoutiaoViewController.xib */,
+			);
+			path = Weitoutiao;
+			sourceTree = "<group>";
+		};
+		E3E8934E217DE571003F5FB0 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E3E89357217DE619003F5FB0 /* UserInfoViewController.swift */,
+				E3E89358217DE619003F5FB0 /* UserInfoViewController.xib */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3A3C3552148A6270051E701 /* Build configuration list for PBXNativeTarget "HelloIOS" */;
 			buildPhases = (
+				DF057373378C7ED93B7D9649 /* [CP] Check Pods Manifest.lock */,
 				E3A3C3292148A6260051E701 /* Sources */,
 				E3A3C32A2148A6260051E701 /* Frameworks */,
 				E3A3C32B2148A6260051E701 /* Resources */,
@@ -312,7 +382,10 @@
 				E3A3C33B2148A6270051E701 /* LaunchScreen.storyboard in Resources */,
 				E3A3C3382148A6270051E701 /* Assets.xcassets in Resources */,
 				E35E4F4B2159CECA00954B8B /* city_plist.plist in Resources */,
+				E3E89356217DE5D0003F5FB0 /* WeitoutiaoViewController.xib in Resources */,
 				E3F10AC1215B8B470090CD43 /* news_plist.plist in Resources */,
+				E3E89352217DE5A7003F5FB0 /* HomeViewController.xib in Resources */,
+				E3E8935A217DE619003F5FB0 /* UserInfoViewController.xib in Resources */,
 				E3A3C3362148A6260051E701 /* Main.storyboard in Resources */,
 				E351AB48215CE7DD00577502 /* NewsViewController.xib in Resources */,
 			);
@@ -334,16 +407,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DF057373378C7ED93B7D9649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3A3C3292148A6260051E701 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E33F1AD3214FC8C800C15324 /* LoginViewController.swift in Sources */,
+				E3E89359217DE619003F5FB0 /* UserInfoViewController.swift in Sources */,
 				E31A44492168999B00CB6834 /* ControllerManager.swift in Sources */,
 				E3A3C3332148A6260051E701 /* ViewController.swift in Sources */,
 				E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */,
 				E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */,
+				E3E89351217DE5A7003F5FB0 /* HomeViewController.swift in Sources */,
+				E3E89355217DE5D0003F5FB0 /* WeitoutiaoViewController.swift in Sources */,
+				E3E8934C217DDBAB003F5FB0 /* HomeTabBarController.swift in Sources */,
 				E3399373215C7B5F008CE976 /* News.swift in Sources */,
 				E35E4F482159C9C200954B8B /* PickViewController.swift in Sources */,
 				E3A3C3312148A6260051E701 /* AppDelegate.swift in Sources */,
@@ -517,6 +619,7 @@
 		};
 		E3A3C3562148A6270051E701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C165A1FBF3BC1B53988B20F /* Pods-HelloIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -537,6 +640,7 @@
 		};
 		E3A3C3572148A6270051E701 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA04C4D49F9121326FBDFBBC /* Pods-HelloIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

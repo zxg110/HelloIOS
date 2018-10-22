@@ -1,0 +1,16 @@
+PODS:
+  - SwiftTheme (0.4.1)
+
+DEPENDENCIES:
+  - SwiftTheme
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftTheme
+
+SPEC CHECKSUMS:
+  SwiftTheme: 36d71c4eed4b2c401c782cf036e4586c749a8173
+
+PODFILE CHECKSUM: 15e471ca43416fb89863fe7bd2f40238ae2aa94f
+
+COCOAPODS: 1.5.3
