@@ -2,14 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>New item - 3</key>
-	<dict>
-		<key>title</key>
-		<string></string>
-	</dict>
-	<key>New item - 2</key>
+	<key>colors</key>
 	<dict/>
-	<key>New item</key>
-	<dict/>
+	<key>tabbarTintColor</key>
+	<string>#925657</string>
+	<key>tableViewBackgroundColor</key>
+	<string>#1b1b1b</string>
 </dict>
 </plist>

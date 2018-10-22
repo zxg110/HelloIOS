@@ -31,7 +31,9 @@ class HomeTabBarController: UITabBarController {
         self.addChildViewController(childVC)
         childVC.tabBarItem.title = title
         childVC.tabBarItem.image = UIImage(named: imgName)
-        childVC.tabBarItem.selectedImage = UIImage(named: imgName+"_selected")
+        let selectedImg =  UIImage(named: "userinfo_icon_selected")
+        selectedImg?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        childVC.tabBarItem.selectedImage = selectedImg
     }
 
     /*
