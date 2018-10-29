@@ -68,7 +68,14 @@ class NewsViewController: UITableViewController {
         cell?.tvNewsTitle?.text = news.title
         cell?.tvNewsDesc?.text = news.desc
         return cell!
-    
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? NewsViewCell{
+//           let row = indexPath.row
+//           let news:News = newsItem[row]
+//           cell.tvNewsTitle.text = news.title
+//           cell.tvNewsDesc.text = news.desc
+//           return cell
+//        }
+//        return cell
     }
     //返回每个cell的高度
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

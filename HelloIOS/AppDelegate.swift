@@ -17,11 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("app lanuch successed")
+        //设置主题
+        CommonTheme.switchTo(CommonTheme.day)
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         let rootTabbarVC = HomeTabBarController()
         self.window?.rootViewController = rootTabbarVC
         self.window?.makeKeyAndVisible()
-        self.window?.backgroundColor = UIColor.blue
         return true
     }
 

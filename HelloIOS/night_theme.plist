@@ -3,10 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>colors</key>
-	<dict/>
-	<key>tabbarTintColor</key>
-	<string>#925657</string>
-	<key>tableViewBackgroundColor</key>
-	<string>#1b1b1b</string>
+	<dict>
+		<key>tableViewBackgroundColor</key>
+		<string>#1b1b1b</string>
+		<key>tabbarTintColor</key>
+		<string>#925657</string>
+	</dict>
 </dict>
 </plist>
