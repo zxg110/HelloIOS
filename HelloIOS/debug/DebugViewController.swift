@@ -10,6 +10,7 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
+    @IBOutlet weak var tvNetData: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +25,9 @@ class DebugViewController: UIViewController {
     //测试访问网络
     @IBAction func testNet(_ sender: Any) {
         print("testNetWork click")
-        HttpRestfulClient.sharedInstance.testRequset()
+        HttpRestfulClient.sharedInstance.testRequset({(dataFromNet:String) in
+                self.tvNetData.text = dataFromNet
+        })
     }
     
     
