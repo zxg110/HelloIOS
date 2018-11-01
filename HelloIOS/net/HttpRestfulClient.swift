@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import HandyJSON
 
 class HttpRestfulClient {
     static let sharedInstance = HttpRestfulClient()
@@ -36,19 +37,22 @@ class HttpRestfulClient {
     //swift3.0默认是非逃逸的
     //弊端
     //该方法拿到数据后，字节解析字段，破坏了封装性。合理的做法应该是封装成model，再调用闭包，把model给出去
-    public func testRequset(_ completionHandler: @escaping(_ dataFromNet:String)->()){
+    public func testRequset(_ completionHandler: @escaping(_ dataFromNet:AnyObject)->()){
         let params = ["device_id": device_id, "iid": iid]
-        Alamofire.request("https://is.snssdk.com/search/suggest/homepage_suggest/?", method: .get, parameters: params).responseJSON{
+        Alamofire.request("https://is.snssdk.com/search/suggest/homepage_suggest/?", method: .get, parameters: params).responseString{
             (response) in
             if let value = response.result.value{
                 print("value:",value)
-                let json = JSON(value)
-                print(json)
-                guard json["message"] == "success" else {return}
-            
-                if let data = json["data"].dictionary{
-                    completionHandler(data["homepage_search_suggest"]!.string!)
-                }
+//                let json = JSON(value)
+//                print(json)
+//                guard json["message"] == "success" else {return}
+//
+//                if let data = json["data"].dictionary{
+//                    completionHandler(data["homepage_search_suggest"]!.string!)
+//                }
+                let responseModel = BaseResponse<TestNetResponse>.deserialize(from: value)!
+                print("model:",responseModel.data)
+                completionHandler(responseModel.data!)
             }
         }
     }

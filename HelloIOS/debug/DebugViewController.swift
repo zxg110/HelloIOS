@@ -10,6 +10,7 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
+    private var model:TestNetResponse?
     @IBOutlet weak var tvNetData: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,15 @@ class DebugViewController: UIViewController {
     //测试访问网络
     @IBAction func testNet(_ sender: Any) {
         print("testNetWork click")
-        HttpRestfulClient.sharedInstance.testRequset({(dataFromNet:String) in
-                self.tvNetData.text = dataFromNet
-        })
+        HttpRestfulClient.sharedInstance.testRequset{ (dataFromNet) in
+            if  let model = dataFromNet as? TestNetResponse{
+                self.updateUI(model: model)
+            }
+        };
+    }
+    
+    private func updateUI(model:TestNetResponse){
+        self.tvNetData.text = model.homepage_search_suggest!
     }
     
     

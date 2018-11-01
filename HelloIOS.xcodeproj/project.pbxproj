@@ -24,6 +24,8 @@
 		E3A3C33B2148A6270051E701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A3C3392148A6270051E701 /* LaunchScreen.storyboard */; };
 		E3A3C3462148A6270051E701 /* HelloIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3452148A6270051E701 /* HelloIOSTests.swift */; };
 		E3A3C3512148A6270051E701 /* HelloIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */; };
+		E3CBBBC121897B29001A188D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBBBC021897B29001A188D /* BaseResponse.swift */; };
+		E3CBBBC321897C73001A188D /* TestNetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBBBC221897C73001A188D /* TestNetResponse.swift */; };
 		E3CE9B0A2186EF9C00B1F1E2 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE9B092186EF9C00B1F1E2 /* BaseProtocol.swift */; };
 		E3CF101B2187260400275788 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF10192187260400275788 /* DebugViewController.swift */; };
 		E3CF101C2187260400275788 /* DebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3CF101A2187260400275788 /* DebugViewController.xib */; };
@@ -87,6 +89,8 @@
 		E3A3C34C2148A6270051E701 /* HelloIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A3C3502148A6270051E701 /* HelloIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloIOSUITests.swift; sourceTree = "<group>"; };
 		E3A3C3522148A6270051E701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CBBBC021897B29001A188D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		E3CBBBC221897C73001A188D /* TestNetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetResponse.swift; sourceTree = "<group>"; };
 		E3CE9B092186EF9C00B1F1E2 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		E3CF10192187260400275788 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		E3CF101A2187260400275788 /* DebugViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebugViewController.xib; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				E32C23FB2186E8B20078B4D2 /* NetRequestProtocol.swift */,
 				E32C23FD2186EA340078B4D2 /* HttpRestfulClient.swift */,
 				E3CE9B092186EF9C00B1F1E2 /* BaseProtocol.swift */,
+				E3CBBBC021897B29001A188D /* BaseResponse.swift */,
+				E3CBBBC221897C73001A188D /* TestNetResponse.swift */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -477,10 +483,12 @@
 				E3E89359217DE619003F5FB0 /* UserInfoViewController.swift in Sources */,
 				E31A44492168999B00CB6834 /* ControllerManager.swift in Sources */,
 				E3A3C3332148A6260051E701 /* ViewController.swift in Sources */,
+				E3CBBBC321897C73001A188D /* TestNetResponse.swift in Sources */,
 				E3F10AC4215B9CF70090CD43 /* NewsViewCell.swift in Sources */,
 				E3F10AC8215B9EEC0090CD43 /* NewsViewController.swift in Sources */,
 				E3E89351217DE5A7003F5FB0 /* HomeViewController.swift in Sources */,
 				E3E89355217DE5D0003F5FB0 /* WeitoutiaoViewController.swift in Sources */,
+				E3CBBBC121897B29001A188D /* BaseResponse.swift in Sources */,
 				E3E8935C217DED60003F5FB0 /* CommonTheme.swift in Sources */,
 				E3CE9B0A2186EF9C00B1F1E2 /* BaseProtocol.swift in Sources */,
 				E3E8934C217DDBAB003F5FB0 /* HomeTabBarController.swift in Sources */,

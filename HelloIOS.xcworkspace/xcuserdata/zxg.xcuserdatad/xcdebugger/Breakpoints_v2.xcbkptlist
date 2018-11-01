@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HelloIOS/AppDelegate.swift"
-            timestampString = "562163358.8466409"
+            filePath = "HelloIOS/net/HttpRestfulClient.swift"
+            timestampString = "562747127.685733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HelloIOS/framework/CommonTheme.swift"
-            timestampString = "562163358.850649"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "switchTo(_:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "testRequset(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
