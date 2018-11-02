@@ -10,7 +10,6 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
-    private var model:TestNetResponse?
     @IBOutlet weak var tvNetData: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +21,23 @@ class DebugViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    var prot:TestNetProtocol = TestNetProtocol()
     //测试访问网络
     @IBAction func testNet(_ sender: Any) {
+        prot.device_id = 6096495334
+        prot.iid = 5034850950
         print("testNetWork click")
-        HttpRestfulClient.sharedInstance.testRequset{ (dataFromNet) in
-            if  let model = dataFromNet as? TestNetResponse{
-                self.updateUI(model: model)
+        HttpRestfulClient.sharedInstance.sendRequset(prot,{(model,error) in
+            if error != HttpRestfulClient.NetError.SUCCESS {
+                print("error")
+                return
             }
-        };
+            if let data = model as? TestNetResponse{
+                self.updateUI(model: data)
+            }
+        })
     }
+
     
     private func updateUI(model:TestNetResponse){
         self.tvNetData.text = model.homepage_search_suggest!

@@ -17,6 +17,7 @@
 		E351AB48215CE7DD00577502 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E351AB47215CE7DD00577502 /* NewsViewController.xib */; };
 		E35E4F482159C9C200954B8B /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E4F462159C9C200954B8B /* PickViewController.swift */; };
 		E35E4F492159C9C200954B8B /* PickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35E4F472159C9C200954B8B /* PickViewController.xib */; };
+		E393D79C218B1C1C0047C2C2 /* TestNetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393D79B218B1C1C0047C2C2 /* TestNetProtocol.swift */; };
 		E3A3C3312148A6260051E701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3302148A6260051E701 /* AppDelegate.swift */; };
 		E3A3C3332148A6260051E701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A3C3322148A6260051E701 /* ViewController.swift */; };
 		E3A3C3362148A6260051E701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A3C3342148A6260051E701 /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		E35E4F462159C9C200954B8B /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		E35E4F472159C9C200954B8B /* PickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickViewController.xib; sourceTree = "<group>"; };
 		E35E4F4A2159CECA00954B8B /* city_plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = city_plist.plist; sourceTree = "<group>"; };
+		E393D79B218B1C1C0047C2C2 /* TestNetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetProtocol.swift; sourceTree = "<group>"; };
 		E3A3C32D2148A6260051E701 /* HelloIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A3C3302148A6260051E701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A3C3322148A6260051E701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				E3CE9B092186EF9C00B1F1E2 /* BaseProtocol.swift */,
 				E3CBBBC021897B29001A188D /* BaseResponse.swift */,
 				E3CBBBC221897C73001A188D /* TestNetResponse.swift */,
+				E393D79B218B1C1C0047C2C2 /* TestNetProtocol.swift */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				E3CBBBC121897B29001A188D /* BaseResponse.swift in Sources */,
 				E3E8935C217DED60003F5FB0 /* CommonTheme.swift in Sources */,
 				E3CE9B0A2186EF9C00B1F1E2 /* BaseProtocol.swift in Sources */,
+				E393D79C218B1C1C0047C2C2 /* TestNetProtocol.swift in Sources */,
 				E3E8934C217DDBAB003F5FB0 /* HomeTabBarController.swift in Sources */,
 				E3399373215C7B5F008CE976 /* News.swift in Sources */,
 				E32C23FE2186EA340078B4D2 /* HttpRestfulClient.swift in Sources */,

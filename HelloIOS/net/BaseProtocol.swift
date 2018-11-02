@@ -7,7 +7,20 @@
 //
 
 import UIKit
+import HandyJSON
 
-class BaseProtocol: NSObject {
+class BaseProtocol<T:HandyJSON> {
+    func getParams()->Dictionary<String, AnyObject>?{
+        return nil;
+    }
     
+    func getOpertion()->String?{
+        return nil
+    }
+    
+    func getMethod()->HttpRestfulClient.NetMethod{
+        return HttpRestfulClient.NetMethod.GET
+    }
+
+    public required init(){}
 }
